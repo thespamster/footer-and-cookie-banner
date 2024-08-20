@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(167, 165, 165);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;  /* set css display to flex */
+    flex-direction: column; /* set flex direction to column */
+    min-height: 100dvh; /* set minimum height to 100dvh of the viewport height */
+}
+
+/* 
+    creates a content div that is smaller than the height of the screen.
+    this demonstrates that the footer is fixed to the bottom of the screen
+*/
+#main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    height: 50dvh; /* change this value to see how the footer behaves */
+    background-color: rgb(248, 244, 244);
+}
+
+/* 
+    creates a footer that is fixed to the bottom of the display 
+    if the content is less than the height of the display or the
+    bottom of the content if the content height is greater than
+    the height of the display
+*/
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /* this fixes the footer to bottom of the body */
+    background-color: black;
+    padding: 2rem;
+    color: white;
+}
+
+#header-style {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
