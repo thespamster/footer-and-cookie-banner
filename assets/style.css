@@ -32,14 +32,29 @@ body {
     the height of the display
 */
 footer {
-    display: flex;
-    justify-content: center;
     margin-top: auto; /* this fixes the footer to bottom of the body */
     background-color: black;
     padding: 2rem;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
+.footer-text {
+    text-align: center;
+}
+
+/* CSS to align SVG icons and accompanying text */
+.icon,
+.text {
+    text-align: start;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* style the header */
 #header-style {
     background-color: black;
     color: white;
@@ -50,15 +65,13 @@ footer {
 /* CSS FOR COOKIE BANNER */
 
 #cookieBanner {
-    width: 100%;
+    display: flex;
     background-color: #0828f3;
     color: white;
     padding: 3rem;
 }
 
-
-
-p {
+.text-center {
     text-align: center;
 }
 
